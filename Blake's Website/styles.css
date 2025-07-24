@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+main {
+    padding-top: 83px;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(41, 38, 38);
+    color: white;
+    z-index: 1000;
+    padding: 20px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav span a {
+    border-style: solid;
+    border-radius: 30px;
+    background-color: white;
+    color: #333333;
+} */
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav img {
+    position: relative;
+    bottom: 2px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.blakes-pfp {
+    /* display: flex; */
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 249, 249);
+}
+
+.blakes-pfp img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    bottom: 0;
+    margin: auto;
+}
+
+.blakes-pfp hr {
+    display: block;
+    border: none;
+    padding: 0;
+    height: 4px;
+    background-color: rgba(196, 196, 196, 0.466);
+    width: 100%;
+    margin: 0;
+}
+
+.about-me {
+    position: static;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    margin: 20px 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(196, 196, 196, 0.466);
+}
+
+.about-me p {
+    text-align:start;
+    margin: 20px;
+}
+
+.about-me p span {
+    padding-left: 2em;
+}
+
+#about {
+    scroll-margin-top: 100px; /* Adjust based on your nav height */
+}
+
+#portfolio {
+    scroll-margin-top: 100px; /* Adjust based on your nav height */
+}
+
+#contact {
+    scroll-margin-top: 100px; /* Adjust based on your nav height */
+}
+
+.projects {
+    position: static;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    margin: 20px 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(196, 196, 196, 0.466);
+}
+
+.contact {
+    position: static;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    margin: 20px 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(196, 196, 196, 0.466);
+}
+
+.contact h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    position: relative;
+    bottom: 10px;
+    padding: 0px;
+    /* font-weight: bold; */
+    margin-top: 0;
+}
+
+.contact img {
+    position: relative;
+    bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.contact a {
+    padding: 0;
+}
+
+.contact img:hover {
+    filter: brightness(0.8);
+    transform: translateY(-8px); /* smoother and doesn't cause reflow */
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(41, 38, 38);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

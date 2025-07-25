@@ -1,0 +1,81 @@
+/* html {
+    background-color: white;
+} */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 38, 38);
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 20px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+
+nav a, img {
+    width: 70px;
+    position: absolute;
+    left: 5px;
+    top: 7px
+}
+
+.cell {
+  background-color: #dadada;
+  border: 2px solid #bebebe;
+  border-radius: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100px;
+}
+
+#reset {
+    background-color: #dadada;
+    border: 2px solid #bebebe;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.status {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent 0%, #999 50%, transparent 100%);
+    width: 60%;
+    margin: 10px auto;
+    position: relative;
+    bottom: 15px;
+}

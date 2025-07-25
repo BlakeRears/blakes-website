@@ -20,6 +20,10 @@ main {
     padding-top: 83px;
 }
 
+p {
+    line-height: 1.4em;
+}
+
 nav {
     display: block;
     position: fixed;
@@ -118,9 +122,9 @@ nav img {
     margin: 20px;
 }
 
-.about-me p span {
+/* .about-me p span {
     padding-left: 2em;
-}
+} */
 
 #about {
     scroll-margin-top: 100px; /* Adjust based on your nav height */
@@ -170,11 +174,11 @@ nav img {
 }
 
 .contact img {
-    position: relative;
-    bottom: 20px;
-    max-width: 100%;
+    /* position: relative; */
+    /* bottom: 20px; */
+    width: 100px;
     height: auto;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .contact a {

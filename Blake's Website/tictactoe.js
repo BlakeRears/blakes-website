@@ -63,7 +63,6 @@ function handleCellClick(event) {
 
     // Switch player
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    document.querySelector('.current-player').textContent = currentPlayer;
     document.getElementById('status').textContent = `Player ${currentPlayer}'s turn`;
 }
 

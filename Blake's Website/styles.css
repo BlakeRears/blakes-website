@@ -97,14 +97,58 @@ nav img {
     margin: auto;
 }
 
-.blakes-pfp hr {
+/* .blakes-pfp hr {
     display: block;
-    border: none;
-    padding: 0;
+    border: 2px solid rgba(196, 196, 196, 0.466);
+    padding: 20px;
     height: 4px;
-    background-color: rgba(196, 196, 196, 0.466);
+    background-color: rgb(41, 38, 38);
     width: 100%;
     margin: 0;
+    z-index: 1;
+} */
+
+/* .name {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    z-index: 2;
+} */
+
+.hr-text {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 60px;
+    margin-bottom: 50px;
+    width: 100vw;
+    overflow: visible;
+}
+
+.hr-text::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border: 2px solid rgba(196, 196, 196, 0.466);
+    border-radius: 6px;
+    background-color: rgb(41, 38, 38);
+    height: 60px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hr-text h1 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 2;
 }
 
 .about-me {
@@ -143,25 +187,38 @@ nav img {
     position: static;
     padding-top: 0;
     margin-top: 0;
-    text-align: center;
     margin: 20px 20px;
     border-style: solid;
     border-radius: 20px;
     border-color: rgba(196, 196, 196, 0.466);
 }
 
-.project1 img{
+.projects h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.projects img{
     display: block;
     max-width: 100%;
-    margin: auto;
+    margin: 0 auto;
     width: 50%;
 }
 
-.project2 img{
-    display: block;
-    max-width: 100%;
-    width: 50%;
-    margin: 0 auto;
+.projects h3{
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.projects h3 span {
+    text-decoration: underline;
+}
+
+.projects p {
+    text-align: center;
+    margin: 20px
 }
 
 .contact {
@@ -237,4 +294,5 @@ button {
     cursor: pointer;
     display: block;
     margin: 20px auto;
+    margin-bottom: 70px;
 }

@@ -79,3 +79,30 @@ hr {
     position: relative;
     bottom: 15px;
 }
+
+@media (max-width: 389px) {
+    nav h1 {
+        font-size: 25px;
+    }
+
+    nav a, img {
+        width: 70px;
+        position: absolute;
+        left: 5px;
+        top: 4px
+    } 
+
+    .cell {
+        font-size: 3em;
+    }
+
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 95px);
+        grid-gap: 5px;
+        width: 100%;
+        margin-bottom: 40px;
+        justify-content: center;
+        margin: 0 auto;
+}
+}
